@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!---Enrique Gonzalez Macias-->
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="etsit.ico">
+</head>
+
+<body>
+	<h1>Formulario</h1>
+
+	<form>
+		<fieldset>
+			<legend>Datos personales </legend>
+
+			<p>
+				<label>Nombre(*)
+					<input type="text" id="nombre" name="nombre" minlength="3" maxlength="20" size="35" required placeholder="Introduzca su nombre"> 
+				</label>
+			</p>
+
+			<p>
+				<label>Apellidos(*)
+					<input type="text" id="apellidos" name="apellidos" size="35" required placeholder="Introduzca sus apellidos"> 
+				</label>
+			</p>
+
+			<p>
+				<label>Teléfono
+					<input type="tel" id="teléfono" name="teléfono"  size="35" placeholder="Introduzca su teléfono"> 
+				</label>
+			</p>
+
+			<p>
+				<label>Correo electronico(*)
+					<input type="email" id="correo electronico" name="correo electronico" size="35" required placeholder="Introduzca su correo electronico"> 
+				</label>
+			</p>
+
+			<fieldset>
+				<legend>Selecciona Género</legend>
+				<label><input type="radio" name="sexo" value="hombre">Hombre</label>
+				<label><input type="radio" name="sexo" value="mujer">Mujer</label>
+			</fieldset>
+
+			<p>
+				<label>Color
+					<input type="color" name="color preferido" id="color preferido">
+				</label>
+			</p>
+
+			
+			Resumen del CV(*)
+			<br>
+			<textarea cols="80" rows="4" name="Resumen del CV" id="Resumen del CV" required placeholder="Breve resumen de CV"></textarea>
+
+			<p>
+				Ficheros adjuntos con el CV
+				<input type="file" name="adjuntos con el CV" id="adjuntos con el CV" size="35" multiple>
+			</p>
+
+			<fieldset>
+				<legend>Dirección</legend>
+
+				<p>
+					<label>Calle
+						<input type="text" id="calle" name="calle" minlength="2" maxlength="10" placeholder="Calle"> 
+					</label>
+				</p>
+
+				<p>
+					<label>Número
+						<input type="number" id="numero" name="numero" min="0" max="1000" placeholder="Númer"> 
+					</label>
+				</p>
+
+				<p>
+					<label>Código postal
+						<input type="range" id="CP" name="CP" min="10000" max="70000" step="1"> 
+					</label>
+				</p>
+
+				<p>
+					<label>Provincia
+						<select name="provincia" id="provincia">
+							<option value="Madrid">Madrid</option>
+							<option value="Segovia">Segovia</option>
+							<option value="Valencia">Valencia</option>
+						</select>
+					</label>
+				</p>
+
+				<p>
+					<label>País
+						<input type="pais" id="pais" name="country-name"  list="browsers" size="35" placeholder="Teclea para completar el país"> 
+						<datalist id="browsers">
+							<option value="España"/>
+							<option value="Francia"/>
+							<option value="Italia"/>
+						</datalist>
+					</label>
+				</p>
+
+			</fieldset>
+
+			<p>
+				Interesado en puestos 	
+				<label><input type="checkbox" name="tiempo" value="completo" checked>Tiempo completo</label>
+				<label><input type="checkbox" name="tiempo" value="parcial">Tiempo parcial</label>
+			</p>
+
+			<input type="submit"> <input type="reset">
+
+		</fieldset>
+	</form>
+
+
+</body>
+
+</html>

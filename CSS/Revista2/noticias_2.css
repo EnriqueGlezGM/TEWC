@@ -1,0 +1,65 @@
+/*Enrique Gonzalez Macias*/
+a {
+	color: #245F5F;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+body {
+	font-family: "Georgia";
+	color: #009097;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-image:  url(background.jpg);
+}
+
+
+
+h1, h2 {
+	font-weight: normal;
+	font-family: "Century Gothic";
+	margin: 3px;
+	padding: 0px;
+}
+
+label{
+	border: 5px purple solid;
+}
+
+li{
+	border: 5px blue solid;
+	background: #E8FBFB;
+	margin-top: 10px; 
+	padding:5px;
+}
+
+body > div:first-child {
+	border: 5px red solid;
+	background: white;
+}
+div>h2{
+	border: 5px orange solid;
+}
+
+img {
+	border-style: none;
+	padding: 5px;
+}
+
+ul {
+	list-style-type:none;
+	border: 10px green solid;
+	background: white;
+	padding-left: 0px;
+	margin:0px;
+}
+div>p{
+	margin:0px;
+}
